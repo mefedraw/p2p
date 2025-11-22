@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mefedraw Exchange - P2P обменник криптовалюты</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-exchange-alt"></i>
+                <h1>Mefedraw Exchange</h1>
+            </div>
+            <nav>
+                <a href="#exchange">Обмен</a>
+                <a href="#about">О нас</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Быстрый и безопасный P2P обмен криптовалюты</h2>
+                <p>Покупайте и продавайте криптовалюту напрямую через Тинькофф и Сбербанк</p>
+            </div>
+        </section>
+
+        <section id="exchange" class="exchange-section">
+            <div class="container">
+                <div class="exchange-tabs">
+                    <button class="tab-btn active" data-tab="buy">Купить</button>
+                    <button class="tab-btn" data-tab="sell">Продать</button>
+                </div>
+
+                <div class="exchange-form">
+                    <div class="form-group">
+                        <label>Вы отдаете</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="give-amount" placeholder="0" value="10000">
+                            <select id="give-currency">
+                                <option value="RUB">RUB</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="exchange-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Вы получаете</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="receive-amount" placeholder="0" readonly>
+                            <select id="receive-currency">
+                                <option value="BTC">BTC</option>
+                                <option value="ETH">ETH</option>
+                                <option value="USDT">USDT</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="payment-methods">
+                        <label>Способ оплаты</label>
+                        <div class="methods-grid">
+                            <div class="method-card active" data-method="tinkoff">
+                                <img src="https://acdn.tinkoff.ru/static/pages/files/d1c52a3f-a061-4b4f-8a00-f55eff8fb1e0.png" alt="Тинькофф">
+                                <span>Тинькофф</span>
+                            </div>
+                            <div class="method-card" data-method="sberbank">
+                                <img src="https://www.sberbank.ru/portalserver/content/atom/contentRepository/content/sberbank_logo_ru.png" alt="Сбербанк">
+                                <span>Сбербанк</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="exchange-btn">
+                        <i class="fas fa-arrow-right"></i>
+                        Продолжить обмен
+                    </button>
+
+                    <div class="exchange-info">
+                        <div class="info-item">
+                            <span>Курс:</span>
+                            <span id="rate">1 BTC = 5,800,000 RUB</span>
+                        </div>
+                        <div class="info-item">
+                            <span>Комиссия:</span>
+                            <span>0.5%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Преимущества</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Безопасность</h3>
+                        <p>Все сделки защищены эскроу-сервисом</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Быстро</h3>
+                        <p>Обмен занимает от 5 до 15 минут</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-percent"></i>
+                        <h3>Низкие комиссии</h3>
+                        <p>Комиссия всего 0.5% за сделку</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-headset"></i>
+                        <h3>Поддержка 24/7</h3>
+                        <p>Всегда готовы помочь вам</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>О нас</h2>
+                <p>Mefedraw Exchange - это надежная P2P платформа для обмена криптовалюты. Мы предоставляем безопасный и удобный способ покупки и продажи криптовалюты через популярные российские банки.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacts">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mefedraw Exchange</h3>
+                    <p>P2P обменник криптовалюты</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-envelope"></i> support@mefedraw.exchange</p>
+                    <p><i class="fab fa-telegram"></i> @mefedraw_support</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mefedraw Exchange. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
